@@ -1,0 +1,16 @@
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\newcommand\tablineiwdth[0]{1pt}
+
+\newcommand\leftrule[1]{%
+  \multicolumn{1}{!{\vrule width \tablineiwdth}c!{\textcolor{white}{\vrule width \tablineiwdth}}}{#1}%
+}
+
+\newlength\Origarrayrulewidth
+\newcommand{\downrule}[1]{%
+  \noalign{\global\setlength\Origarrayrulewidth{\arrayrulewidth}}%
+  \noalign{\global\setlength\arrayrulewidth{\tablineiwdth}}\cline{#1-#1}%
+  \noalign{\global\setlength\arrayrulewidth{\Origarrayrulewidth}}%
+}

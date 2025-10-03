@@ -1,0 +1,51 @@
+\documentclass{article}
+
+\title{Style test}
+\input{maths}
+\input{table style}
+\begin{document}
+\maketitle
+
+\section{Maths}
+
+\begin{table}[h]
+\caption{Custom commands and outputs.}
+\begin{tabular}{l l}
+\toprule 
+
+Command & Output \\
+\cmidrule(l){1-1}\cmidrule(l){2-2}
+transpose & $x\transpose$ \\
+modes\{1\} & $\modes{1}$ \\
+barModes\{1\} & $\barModes{1}$\\
+dotCoupling\{1\} & $\dotCoupling{1}$ \\
+ddotCoupling\{1\} & $\ddotCoupling{1}$ \\
+coupling &  $\coupling$\\
+modalStiffness &  $\modalStiffness$\\
+
+vecSpace\{1\} &  $\vecSpace{1}$\\
+matSpace\{1\}\{2\} &  $\matSpace{1}{2}$\\
+tensorSpace\{1\}\{2\}\{3\} &  $\tensorSpace{1}{2}{3}$\\
+tensorFourSpace\{1\}\{2\}\{3\}\{4\} &  $\tensorFourSpace{1}{2}{3}{4}$\\
+
+inVecSpace\{1\} &  $\inVecSpace{1}$\\
+inMatSpace\{1\}\{2\} &  $\inMatSpace{1}{2}$\\
+inTensorSpace\{1\}\{2\}\{3\} &  $\inTensorSpace{1}{2}{3}$\\
+inTensorFourSpace\{1\}\{2\}\{3\}\{4\} &  $\inTensorFourSpace{1}{2}{3}{4}$\\
+funcMapping\{$x$\}\{$y$\} &  $\funcMapping{x}{y}$\\
+
+reductionBasis\{1\} &  $\reductionBasis{1}$\\
+stressManifold\{1\} &  $\stressManifold{1}$\\
+validationManifold\{1\} &  $\validationManifold{1}$\\
+
+partialDiff\{$y$\}\{$x$\} &  $\partialDiff{y}{x}$\\
+partialDiffTwo\{$y$\}\{$x$\} &  $\partialDiffTwo{y}{x}$\\
+partialDiffn\{$y$\}\{$x$\}\{$n$\} &  $\partialDiffn{y}{x}{n}$\\
+ordDiff\{$y$\}\{$x$\} &  $\ordDiff{y}{x}$\\
+ordDiffn\{$y$\}\{$x$\}\{$n$\} &  $\ordDiffn{y}{x}{n}$\\
+\bottomrule
+\end{tabular}
+\label{tab:maths_def}
+\end{table}
+
+\end{document}

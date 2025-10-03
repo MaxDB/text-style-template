@@ -1,0 +1,46 @@
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{siunitx}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+
+
+\newcommand{\transpose}{^{\scriptscriptstyle{\mathrm T}}}
+
+\newcommand{\modes}[1]{\bm{\Phiup}_{#1}}
+\newcommand{\barModes}[1]{{\bm{\bar\Phiup}}_{#1}}
+\newcommand{\dotCoupling}[1]{\dot{\bm{\thetaup}}_{#1}}
+\newcommand{\ddotCoupling}[1]{\ddot{\bm{\thetaup}}_{#1}}
+\newcommand{\coupling}{\bm{\thetaup}}
+\newcommand{\modalStiffness}{\bm\Lambda}
+
+\newcommand{\vecSpace}[1]{\mathbb{R}^{#1}}
+\newcommand{\matSpace}[2]{\mathbb{R}^{#1\times#2}}
+\newcommand{\tensorSpace}[3]{\mathbb{R}^{#1\times#2 \times #3}}
+\newcommand{\tensorFourSpace}[4]{\mathbb{R}^{#1\times#2 \times #3 \times #4}}
+
+\newcommand{\inVecSpace}[1]{\in \vecSpace{#1}}
+\newcommand{\inMatSpace}[2]{\in \matSpace{#1}{#2}}
+\newcommand{\inTensorSpace}[3]{\in \tensorSpace{#1}{#2}{#3}}
+\newcommand{\inTensorFourSpace}[4]{\in \tensorFourSpace{#1}{#2}{#3}{#4}}
+\newcommand{\funcMapping}[2]{: {#1} \rightarrow {#2}}
+
+\newcommand{\reductionBasis}[1]{\mathcal R_{{#1}}}
+\newcommand{\stressManifold}[1]{\mathcal W_{\reductionBasis{#1}}}
+\newcommand{\validationManifold}[1]{\mathcal V_{\mathbf r^*_{{#1}}}}
+
+
+\newcommand{\partialDiff}[2]{\frac{\partial {#1}}{\partial {#2}}}
+\newcommand{\partialDiffTwo}[2]{\frac{\partial^2 {#1}}{\partial {#2}}} 
+\newcommand{\partialDiffn}[3]{\frac{\partial^{#3} {#1}}{\partial {#2}^{#3}}} 
+\newcommand{\ordDiff}[2]{\frac{\mathrm{d} {#1}}{\mathrm{d} {#2}}} 
+\newcommand{\ordDiffn}[3]{\frac{\mathrm{d}^{#3} {#1}}{\mathrm{d} {#2}^{#3}}} 
+
+
+%quantity
+\newcommand{\range}[2]{^{+#1}_{\;\!\text{-}\;\!#2}}
+
+%highlighting
+\newcommand{\hlcolour}[0]{yellow}
+\newcommand{\mathhl}[1]{\colorbox{\hlcolour}{$\displaystyle #1$}}
+\newcommand{\parahl}[1]{\sethlcolor{\hlcolour}\hl{#1}}
